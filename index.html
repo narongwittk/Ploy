@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lobby</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+        }
+
+        .game-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .game-card-content {
+            padding: 20px;
+        }
+
+        .game-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .game-card p {
+            color: #777;
+            font-size: 0.9em;
+            line-height: 1.5;
+            min-height: 65px;
+        }
+
+        .play-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .play-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Game Lobby</h1>
+
+    <div class="game-grid">
+
+        <!-- Game 1: Jigsaw Puzzle -->
+        <div class="game-card">
+            <img src="https://placehold.co/300x180/007BFF/FFFFFF?text=Jigsaw" alt="Jigsaw Puzzle Game">
+            <div class="game-card-content">
+                <h2>Jigsaw Puzzle</h2>
+                <p>A classic square puzzle game. Select an image and a grid size to start playing.</p>
+                <!-- Make sure your jigsaw game file is named "jigsaw.html" -->
+                <a href="./Jigsaw.html" class="play-btn">Play Now</a>
+            </div>
+        </div>
+
+        <!-- Game 2: Flash Cards -->
+        <div class="game-card">
+            <img src="https://placehold.co/300x180/28A745/FFFFFF?text=Flash-Cards" alt="Flash Cards Game">
+            <div class="game-card-content">
+                <h2>Flash Cards Game</h2>
+                <p>A classic learning tool. Flip the cards to test your knowledge and improve your memory on any subject.</p>
+                <!-- Link to your next game file here -->
+                <a href="./FlashCards.html" class="play-btn">Play Now</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
